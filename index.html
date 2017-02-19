@@ -7,41 +7,39 @@
         <script src="js/index.js"></script>
     </head>
     <body>
-        <button type="button" name="ボタン" class="toggle">隠す</button>
-        <script>
-        /*
-        $(function(){
-           buttonChar(abc){
-             if(abc.value == "隠す"){
-               abc.value = "見せる";
-             }else {
-               abc.value = "隠す";
-             }
-        });
-        */
-
-          $(function(){
-            $('button').click(function(){
-              if($('button').text == "見せる"){
-                $('button').text("隠す");
-              }else if ($('button').text == "隠す") {
-                $('button').text("見せる");
+         <button type="button" name="ボタン" class="toggle">隠す</button>
+         <script>
+         /*
+         $(function(){
+            buttonChar(abc){
+              if(abc.value == "隠す"){
+                abc.value = "見せる";
+              }else {
+                abc.value = "隠す";
               }
-            });
-          });
-
-        </script>
-
-        <h1 class="toggled">
-            こんにちは。
-        </h1>
-        <script>
-         $(function() {
-           $('button').click(function(){
-             $('h1').toggle('slow');
-           });
          });
+         */
+           $(function(){
+             $('button').click(function(){
+               if($('button').text() == "見せる"){
+                 $('button').text("隠す");
+               }else if ($('button').text() == "隠す") {
+                 $('button').text("見せる");
+               }
+             });
+           });
          </script>
 
-    </body>
+         <h1 class="toggled">
+             こんにちは。
+         </h1>
+         <script>
+          $(function() {
+            $('button').click(function(){
+              $('h1').toggle('slow');
+            });
+          });
+          </script>
+
+     </body>
 </html>
